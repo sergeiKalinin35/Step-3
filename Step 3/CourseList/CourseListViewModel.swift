@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol CourseListViewModelProtocol: AnyObject {
+protocol CourseListViewModelProtocol: AnyObject{
     
     var courses: [Course] { get }
     func fetchCourses(completion: @escaping() -> Void)
