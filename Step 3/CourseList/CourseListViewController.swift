@@ -13,6 +13,8 @@ class CourseListViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    
+    
 //MARK: - viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +35,7 @@ class CourseListViewController: UIViewController {
         title = "ЗАГОЛОВОК"
             
     let navigationBar = UINavigationBarAppearance()
-        navigationBar.configureWithOpaqueBackground()
+        navigationBar.configureWithOpaqueBackground() // ???
         navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
         navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
         navigationBar.backgroundColor = UIColor(
@@ -61,18 +63,16 @@ extension CourseListViewController: UITableViewDataSource {
         
         cell.textLabel?.text = "Все получается, гни свою линию!"
         
+       
         return cell
+        
     }
-    
-    
-    
 }
 
 //MARK: - Table View Delegate
 extension CourseListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
     }
-    
-    
 }
