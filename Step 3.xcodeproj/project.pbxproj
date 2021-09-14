@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		F459066526EFCB0D0077781A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F459066426EFCB0D0077781A /* AppDelegate.swift */; };
 		F459066726EFCB0D0077781A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F459066626EFCB0D0077781A /* SceneDelegate.swift */; };
-		F459066926EFCB0D0077781A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F459066826EFCB0D0077781A /* ViewController.swift */; };
+		F459066926EFCB0D0077781A /* CourseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F459066826EFCB0D0077781A /* CourseListViewController.swift */; };
 		F459066C26EFCB0D0077781A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F459066A26EFCB0D0077781A /* Main.storyboard */; };
 		F459066E26EFCB100077781A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F459066D26EFCB100077781A /* Assets.xcassets */; };
 		F459067126EFCB100077781A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F459066F26EFCB100077781A /* LaunchScreen.storyboard */; };
+		F459067F26F01CB50077781A /* CourseListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F459067E26F01CB50077781A /* CourseListViewModel.swift */; };
+		F459068126F01CF20077781A /* CourseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F459068026F01CF20077781A /* CourseTableViewCell.swift */; };
+		F459068326F01D240077781A /* TableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F459068226F01D240077781A /* TableViewCellViewModel.swift */; };
+		F459068526F01E3C0077781A /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = F459068426F01E3C0077781A /* Course.swift */; };
+		F459068726F01E6D0077781A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F459068626F01E6D0077781A /* NetworkManager.swift */; };
+		F459068926F01E880077781A /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F459068826F01E880077781A /* ImageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F459066126EFCB0D0077781A /* Step 3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Step 3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F459066426EFCB0D0077781A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F459066626EFCB0D0077781A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F459066826EFCB0D0077781A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F459066826EFCB0D0077781A /* CourseListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListViewController.swift; sourceTree = "<group>"; };
 		F459066B26EFCB0D0077781A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F459066D26EFCB100077781A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F459067026EFCB100077781A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F459067226EFCB100077781A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F459067E26F01CB50077781A /* CourseListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListViewModel.swift; sourceTree = "<group>"; };
+		F459068026F01CF20077781A /* CourseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTableViewCell.swift; sourceTree = "<group>"; };
+		F459068226F01D240077781A /* TableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellViewModel.swift; sourceTree = "<group>"; };
+		F459068426F01E3C0077781A /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		F459068626F01E6D0077781A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		F459068826F01E880077781A /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,69 @@
 		F459066326EFCB0D0077781A /* Step 3 */ = {
 			isa = PBXGroup;
 			children = (
-				F459066426EFCB0D0077781A /* AppDelegate.swift */,
-				F459066626EFCB0D0077781A /* SceneDelegate.swift */,
-				F459066826EFCB0D0077781A /* ViewController.swift */,
-				F459066A26EFCB0D0077781A /* Main.storyboard */,
-				F459066D26EFCB100077781A /* Assets.xcassets */,
-				F459066F26EFCB100077781A /* LaunchScreen.storyboard */,
+				F459067B26F01BC30077781A /* CourseList */,
+				F459067A26F01BB40077781A /* Models */,
+				F459067926F01B7A0077781A /* Storyboard */,
+				F459067C26F01BFA0077781A /* Managers */,
+				F459067826F01B4D0077781A /* Services */,
 				F459067226EFCB100077781A /* Info.plist */,
 			);
 			path = "Step 3";
+			sourceTree = "<group>";
+		};
+		F459067826F01B4D0077781A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F459066626EFCB0D0077781A /* SceneDelegate.swift */,
+				F459066426EFCB0D0077781A /* AppDelegate.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F459067926F01B7A0077781A /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				F459066D26EFCB100077781A /* Assets.xcassets */,
+				F459066F26EFCB100077781A /* LaunchScreen.storyboard */,
+				F459066A26EFCB0D0077781A /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		F459067A26F01BB40077781A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F459068426F01E3C0077781A /* Course.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F459067B26F01BC30077781A /* CourseList */ = {
+			isa = PBXGroup;
+			children = (
+				F459067D26F01C380077781A /* TableViewCell */,
+				F459066826EFCB0D0077781A /* CourseListViewController.swift */,
+				F459067E26F01CB50077781A /* CourseListViewModel.swift */,
+			);
+			path = CourseList;
+			sourceTree = "<group>";
+		};
+		F459067C26F01BFA0077781A /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				F459068626F01E6D0077781A /* NetworkManager.swift */,
+				F459068826F01E880077781A /* ImageManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		F459067D26F01C380077781A /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				F459068026F01CF20077781A /* CourseTableViewCell.swift */,
+				F459068226F01D240077781A /* TableViewCellViewModel.swift */,
+			);
+			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +203,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F459066926EFCB0D0077781A /* ViewController.swift in Sources */,
+				F459068326F01D240077781A /* TableViewCellViewModel.swift in Sources */,
+				F459068526F01E3C0077781A /* Course.swift in Sources */,
+				F459066926EFCB0D0077781A /* CourseListViewController.swift in Sources */,
+				F459068926F01E880077781A /* ImageManager.swift in Sources */,
+				F459067F26F01CB50077781A /* CourseListViewModel.swift in Sources */,
+				F459068726F01E6D0077781A /* NetworkManager.swift in Sources */,
 				F459066526EFCB0D0077781A /* AppDelegate.swift in Sources */,
 				F459066726EFCB0D0077781A /* SceneDelegate.swift in Sources */,
+				F459068126F01CF20077781A /* CourseTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
