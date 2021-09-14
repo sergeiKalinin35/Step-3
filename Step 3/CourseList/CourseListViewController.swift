@@ -13,20 +13,26 @@ class CourseListViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    private var viewModel: CourseListViewModelProtocol! {
+        didSet {
+            viewModel.fetchCourses {
+                self.tableView.reloadData()
+            }
+        }
+    }
+    
     
     
 //MARK: - viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.rowHeight = 100
+        viewModel = CourseListViewModel()
+        
+        tableView.rowHeight = 120
         setupNavigationBar()
     }
   
-    
-    
- 
-        
     
 //MARK: - setup Navigation Bar
     private func setupNavigationBar() {
@@ -59,9 +65,9 @@ extension CourseListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CourseTableViewCell
         
-        cell.textLabel?.text = "Все получается, гни свою линию!"
+        cell.viewModel = viewModel.cellViewModel(at: indexPath)
         
        
         return cell
